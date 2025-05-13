@@ -1,0 +1,63 @@
+[
+    {
+        "user_id": 24,
+        "package_name": "Deluxe Package",
+        "package_price": 450,
+        "included_services": [
+            "Wash and Fold",
+            "Drying",
+            "Stain Removal",
+            "Ironing"
+        ],
+        "total_amount": 450,
+        "points_earned": 4,
+        "address": "23-11 tagumpay housing",
+        "contact_number": "09122843222",
+        "order_date": "2024-11-07 09:19:28"
+    },
+    {
+        "user_id": 24,
+        "package_name": "Basic Package",
+        "package_price": 200,
+        "included_services": [
+            "Wash and Fold",
+            "Drying"
+        ],
+        "total_amount": 200,
+        "points_earned": 2,
+        "address": "23-11 tagumpay housing",
+        "contact_number": "09122843222",
+        "order_date": "2024-11-07 09:25:49"
+    },
+    {
+        "user_id": 24,
+        "package_name": "Premium Package",
+        "package_price": 550,
+        "included_services": [
+            "Wash and Fold",
+            "Drying",
+            "Stain Removal",
+            "Ironing",
+            "Deep Drying"
+        ],
+        "total_amount": 550,
+        "points_earned": 5,
+        "address": "23-11 tagumpay housing",
+        "contact_number": "09122843222",
+        "order_date": "2024-11-07 09:46:30"
+    },
+    {
+        "user_id": 24,
+        "package_name": "Basic Package",
+        "package_price": 200,
+        "included_services": [
+            "Wash and Fold",
+            "Drying"
+        ],
+        "total_amount": 200,
+        "points_earned": 2,
+        "address": "23-11 tagumpay housing",
+        "contact_number": "09122843222",
+        "order_date": "2024-11-07 09:55:37"
+    }
+]
