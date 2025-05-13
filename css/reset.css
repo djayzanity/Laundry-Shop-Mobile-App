@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway';
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+
+}
+
+svg#freepik_stories-my-password:not(.animated) .animable {opacity: 0;}svg#freepik_stories-my-password.animated #freepik--background-complete--inject-18 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) lightSpeedLeft;animation-delay: 0s;}svg#freepik_stories-my-password.animated #freepik--Shadow--inject-18 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideDown;animation-delay: 0s;}svg#freepik_stories-my-password.animated #freepik--Plant--inject-18 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideUp;animation-delay: 0s;}svg#freepik_stories-my-password.animated #freepik--Lamp--inject-18 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideLeft;animation-delay: 0s;}svg#freepik_stories-my-password.animated #freepik--Fingerprint--inject-18 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) fadeIn;animation-delay: 0s;}svg#freepik_stories-my-password.animated #freepik--iris-recognition--inject-18 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) lightSpeedRight;animation-delay: 0s;}svg#freepik_stories-my-password.animated #freepik--face-recognition--inject-18 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) zoomOut;animation-delay: 0s;}svg#freepik_stories-my-password.animated #freepik--Interface--inject-18 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideDown;animation-delay: 0s;}svg#freepik_stories-my-password.animated #freepik--Character--inject-18 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) zoomOut;animation-delay: 0s;}            @keyframes lightSpeedLeft {              from {                transform: translate3d(-50%, 0, 0) skewX(20deg);                opacity: 0;              }              60% {                transform: skewX(-10deg);                opacity: 1;              }              80% {                transform: skewX(2deg);              }              to {                opacity: 1;                transform: translate3d(0, 0, 0);              }            }                    @keyframes slideDown {                0% {                    opacity: 0;                    transform: translateY(-30px);                }                100% {                    opacity: 1;                    transform: translateY(0);                }            }                    @keyframes slideUp {                0% {                    opacity: 0;                    transform: translateY(30px);                }                100% {                    opacity: 1;                    transform: inherit;                }            }                    @keyframes slideLeft {                0% {                    opacity: 0;                    transform: translateX(-30px);                }                100% {                    opacity: 1;                    transform: translateX(0);                }            }                    @keyframes fadeIn {                0% {                    opacity: 0;                }                100% {                    opacity: 1;                }            }                    @keyframes lightSpeedRight {              from {                transform: translate3d(50%, 0, 0) skewX(-20deg);                opacity: 0;              }              60% {                transform: skewX(10deg);                opacity: 1;              }              80% {                transform: skewX(-2deg);              }              to {                opacity: 1;                transform: translate3d(0, 0, 0);              }            }                    @keyframes zoomOut {                0% {                    opacity: 0;                    transform: scale(1.5);                }                100% {                    opacity: 1;                    transform: scale(1);                }            }    
+
+
+
+.custom-shape-divider-bottom-1728046211 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  z-index: -1;
+} 
+
+.custom-shape-divider-bottom-1728046211 svg {
+  position: relative;
+  display: block;
+  width: calc(150% + 1.3px);
+  height: 450px;
+  transform: rotateY(180deg); /* Flips the shape */
+  transform-origin: top; /* Pivot point for animation */
+  animation: slideDown 2s ease-out forwards; /* Slide animation */
+}
+
+.custom-shape-divider-bottom-1728046211 .shape-fill {
+  fill: #FABC3F;
+}
+
+
+
+.login-container{
+  display: flex;
+  flex-direction: column; /* Stacks items vertically */
+  justify-content: center;
+  align-items: center;/* Pushes items to the top */
+  width: 100%;
+  max-width: 400px; 
+  border: black;
+  
+}
+
+.login-container h1 {
+  position: relative;
+  top: -90px;
+  left: -1px;
+  display: block; /* Make it block-level */
+  color: red;
+  margin: 30px 0 20px 40px;
+  height: auto; /* Remove fixed height */
+}
+
+.login-container h4 {
+  position: relative;
+  top: -95px;
+  left: 2px;
+  font-weight: 400;
+  display: block; /* Make it block-level */
+  margin: 10px 10px 15px 10px; /* Adjust top margin to align properly */
+  height: auto; /* Remove fixed height */
+}
+.pin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 9px;
+  top: -70px;
+}
+
+.pin-input {
+  width: 50px;
+  height: 50px;
+  margin: 0 5px;
+  text-align: center;
+  font-size: 24px;
+  border: 2px solid black;
+  border-radius: 10px;
+  outline: none;
+}
+
+.pin-input:focus {
+  border-color: red;
+}
+
+/* Optional styling for filled inputs */
+.pin-input.filled {
+  border-color: red;
+  color: black;
+}
+
+.remember-forgot{
+  display: flex;
+  margin: -16px 30px 40px -15px;
+
+}
+
+.remember-forgot a{
+  color: red;
+  font-size: 13px;
+  text-decoration: underline;
+  text-align: left;
+  cursor: pointer;
+}
+
+/* From Uiverse.io by Ali-Tahmazi99 */ 
+/* From uiverse.io by @Ali-Tahmazi99 */
+.btn button {
+  display: inline-block;
+  width: 130px;
+  height: 35px;
+  border-radius: 10px;
+  border: 1px solid;
+  position: relative;
+  top: -30px;
+  left: 100px;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+  z-index: 1;
+  color: black;
+  font-weight: 500;
+  cursor: pointer;
+ }
+ 
+ button::before,
+ button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transform: skew(15deg);
+  transition: all 0.5s;
+  overflow: hidden;
+  z-index: -1;
+ }
+ 
+ button::before {
+  left: -9px;
+  background: #FABC3F;
+ }
+ 
+ button::after {
+  right: -9px;
+  background: red;
+ }
+ 
+ button:hover::before,
+ button:hover::after {
+  width: 58%;
+ }
+ 
+ button:hover span {
+  color: #e0aaff;
+  transition: 0.3s;
+ }
+ 
+ button span {
+  color: #03045e;
+  font-size: 18px;
+  transition: all 0.3s ease-in;
+ }
+
+.register {
+  margin-top: 50%;
+  cursor: pointer;
+}
+
+.register a {
+  color: red;
+  font-size: 13px;
+  text-decoration: underline;
+  text-align: left
+}
+
+
+
+
+@media (max-width: 599px) {
+  body {
+    padding: 5px;
+  }
+
+  .login-container {
+    padding: 10px;
+    max-width: 100%; /* Full width for smaller devices */
+  }
+  .login-container h1 h4 {
+    text-align: center;
+    left: 200px;
+  }
+
+  .btn button {
+    max-width: 100%; /* Full width button on small screens */
+  }
+
+  .pin-input {
+    width: 40px; /* Smaller pin input size */
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .custom-shape-divider-bottom-1728046211 svg {
+    height: 300px;
+  }
+}
+
+/* Medium screens (tablets, 600px to 1024px) */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .login-container {
+    max-width: 80%; /* Scale the form for tablets */
+  }
+
+  .custom-shape-divider-bottom-1728046211 svg {
+    height: 300px; /* Adjust shape size for tablets */
+  }
+  .login-container h1 h4 {
+    text-align: center;
+  }
+
+
+  .pin-input {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+/* Large screens (desktops, above 1024px) */
+@media (min-width: 1025px) {
+  .login-container {
+    max-width: 400px;
+  }
+
+  .custom-shape-divider-bottom-1728046211 svg {
+    height: 450px; /* Default height for large screens */
+  }
+
+  .login-container h1 h4 {
+    text-align: center;
+  }
+
+
+}

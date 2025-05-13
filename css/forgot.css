@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway';
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+
+}
+
+svg#freepik_stories-secure-login:not(.animated) .animable {opacity: 0;}svg#freepik_stories-secure-login.animated #freepik--Floor--inject-4 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) zoomOut;animation-delay: 0s;}svg#freepik_stories-secure-login.animated #freepik--Shadows--inject-4 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) zoomIn;animation-delay: 0s;}svg#freepik_stories-secure-login.animated #freepik--Window--inject-4 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideRight;animation-delay: 0s;}svg#freepik_stories-secure-login.animated #freepik--Furniture--inject-4 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideDown;animation-delay: 0s;}svg#freepik_stories-secure-login.animated #freepik--Plant--inject-4 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideLeft;animation-delay: 0s;}svg#freepik_stories-secure-login.animated #freepik--window--inject-4 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideUp;animation-delay: 0s;}svg#freepik_stories-secure-login.animated #freepik--Character--inject-4 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideUp;animation-delay: 0s;}            @keyframes zoomOut {                0% {                    opacity: 0;                    transform: scale(1.5);                }                100% {                    opacity: 1;                    transform: scale(1);                }            }                    @keyframes zoomIn {                0% {                    opacity: 0;                    transform: scale(0.5);                }                100% {                    opacity: 1;                    transform: scale(1);                }            }                    @keyframes slideRight {                0% {                    opacity: 0;                    transform: translateX(30px);                }                100% {                    opacity: 1;                    transform: translateX(0);                }            }                    @keyframes slideDown {                0% {                    opacity: 0;                    transform: translateY(-30px);                }                100% {                    opacity: 1;                    transform: translateY(0);                }            }                    @keyframes slideLeft {                0% {                    opacity: 0;                    transform: translateX(-30px);                }                100% {                    opacity: 1;                    transform: translateX(0);                }            }                    @keyframes slideUp {                0% {                    opacity: 0;                    transform: translateY(30px);                }                100% {                    opacity: 1;                    transform: inherit;                }            }    
+.custom-shape-divider-bottom-1728046211 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  z-index: -1;
+} 
+
+.custom-shape-divider-bottom-1728046211 svg {
+  position: relative;
+  display: block;
+  width: calc(150% + 1.3px);
+  height: 450px;
+  transform: rotateY(180deg); 
+  transform-origin: top; 
+  animation: slideDown 2s ease-out forwards; 
+}
+
+.custom-shape-divider-bottom-1728046211 .shape-fill {
+  fill: #FABC3F;
+}
+
+
+
+.login-container img{
+  width: 80%; 
+  height: 70%;
+  position: relative;
+  left: 5px;
+  padding: 0 30px 30px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  
+}
+.login-container{
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 400px; 
+  border: black;
+  
+}
+
+.login-container h1 {
+  position: relative;
+  top: -90px;
+  left: -1px;
+  display: block; /* Make it block-level */
+  color: red;
+  margin: 30px 0 20px 40px;
+  height: auto; /* Remove fixed height */
+}
+
+.login-container h4 {
+  position: relative;
+  top: -95px;
+  left: 2px;
+  font-weight: 400;
+  display: block; 
+  margin: 10px 10px 15px 10px; 
+  height: auto; 
+}
+
+.input-box{
+  position: relative;
+  line-height: 90px;
+  margin-bottom: 35px;
+  top: -80px;
+  left: 10px;
+  
+}
+input {
+  position: absolute; 
+  width: 90%;
+  outline: none;
+  font-size: 0.9em; 
+  padding: 17px 10px; 
+  line-height: normal;
+  border-radius: 10px;
+  border: 1.5px solid black;
+  margin-top: 12%;
+  top: -55px;
+  left: 12px; 
+  background: transparent;
+  transition: 0.1s ease;
+  z-index: 3;
+  
+}
+
+.labelemail {
+  position: absolute;
+  left: 30px;
+  top: -35px;
+   font-size: 13px;
+   color: black;
+   transition: 0.5s ease; 
+}
+
+
+input:focus,
+input:valid{
+  color: #FF0000;
+  border: 2px solid #FF0000;
+}
+
+input:focus + .labelemail,
+input:valid + .labelemail{
+  color: #FF0000;
+  font-weight: bold;
+  height: 34px;
+  line-height: 5px;
+  transform: translate(-30px, 2px) scale(0.80);
+  z-index: 4;
+}
+
+
+.btn button {
+  display: inline-block;
+  width: 130px;
+  height: 35px;
+  border-radius: 10px;
+  border: 1px solid;
+  position: relative;
+  top: -40px;
+  left: 100px;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+  z-index: 1;
+  color: black;
+  font-weight: 500;
+  cursor: pointer;
+ }
+ 
+ button::before,
+ button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transform: skew(15deg);
+  transition: all 0.5s;
+  overflow: hidden;
+  z-index: -1;
+ }
+ 
+ button::before {
+  left: -9px;
+  background: #FABC3F;
+ }
+ 
+ button::after {
+  right: -9px;
+  background: red;
+ }
+ 
+ button:hover::before,
+ button:hover::after {
+  width: 58%;
+ }
+ 
+ button:hover span {
+  color: #e0aaff;
+  transition: 0.3s;
+ }
+ 
+ button span {
+  color: #03045e;
+  font-size: 18px;
+  transition: all 0.3s ease-in;
+ }
+
+.register {
+  margin-top: 50%;
+  cursor: pointer;
+}
+
+.register a {
+  color: red;
+  font-size: 13px;
+  text-decoration: underline;
+  text-align: left
+}
+
+@media (max-width: 599px) {
+  body {
+    padding: 5px;
+  }
+
+  .login-container {
+    padding: 10px;
+    max-width: 100%; 
+  }
+  .login-container h1 h4 {
+    text-align: center;
+    left: 200px;
+  }
+
+  .btn button {
+    max-width: 100%; 
+  }
+
+  .custom-shape-divider-bottom-1728046211 svg {
+    height: 300px;
+  }
+}
+
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .login-container {
+    max-width: 80%; 
+  }
+
+  .custom-shape-divider-bottom-1728046211 svg {
+    height: 300px; 
+  }
+  .login-container h1 h4 {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1025px) {
+  .login-container {
+    max-width: 400px;
+  }
+
+  .custom-shape-divider-bottom-1728046211 svg {
+    height: 300px; 
+  }
+
+  .login-container h1 h4 {
+    text-align: center;
+  }
+
+
+}

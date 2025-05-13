@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <html>
+<head>
+    <title>Orders</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .container {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+        .tabs {
+            display: flex;
+            justify-content: space-around;
+            border-bottom: 1px solid #ddd;
+        }
+        .tab {
+            padding: 10px 0;
+            flex: 1;
+            text-align: center;
+            color: #00aaff;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .tab.inactive {
+            color: #aaa;
+        }
+        .order {
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        .order:last-child {
+            border-bottom: none;
+        }
+        .order h2 {
+            margin: 0;
+            font-size: 18px;
+            color: #333;
+        }
+        .order p {
+            margin: 5px 0;
+            color: #666;
+            font-size: 14px;
+        }
+        .order .price {
+            float: right;
+            font-size: 18px;
+            color: #333;
+        }
+        .order-details {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .order-details div {
+            font-size: 14px;
+            color: #666;
+        }
+        .order-details .status {
+            color: #00aaff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Orders</h1>
+        </div>
+        <div class="tabs">
+            <div class="tab active">New Orders</div>
+            <div class="tab inactive">Past Orders</div>
+        </div>
+        <div class="order">
+            <h2>Sam Smith <span class="price">$ 250.00</span></h2>
+            <p>104, Walnut Street, Opp. Business Bank, City Park, Illinois, USA</p>
+            <div class="order-details">
+                <div>Order ID<br>UDL2214</div>
+                <div>Ordered on<br>20 Jun, 11:30am</div>
+                <div>Ordered Status<br><span class="status">Pending</span></div>
+            </div>
+        </div>
+        <div class="order">
+            <h2>Emili Johnson <span class="price">$ 790.50</span></h2>
+            <p>B11, Ameziya Tower, Near Jolly Musium, City Park, Illinois, USA</p>
+            <div class="order-details">
+                <div>Order ID<br>YDL2552</div>
+                <div>Ordered on<br>20 Jun, 11:30am</div>
+                <div>Ordered Status<br><span class="status">Pending</span></div>
+            </div>
+        </div>
+        <div class="order">
+            <h2>Samantha George <span class="price">$ 250.00</span></h2>
+            <p>104, Walnut Street, Opp. Business Bank, City Park, Illinois, USA</p>
+            <div class="order-details">
+                <div>Order ID<br>UDL2214</div>
+                <div>Ordered on<br>20 Jun, 11:30am</div>
+                <div>Ordered Status<br><span class="status">Pending</span></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

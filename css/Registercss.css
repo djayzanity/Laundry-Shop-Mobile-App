@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway';
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+
+}
+
+body.fade-out {
+  opacity: 0;
+}
+
+.custom-shape-divider-bottom-1728046211 {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  z-index: -1;
+} 
+
+.custom-shape-divider-bottom-1728046211 svg {
+  position: relative;
+  display: block;
+  width: calc(150% + 1.3px);
+  height: 450px;
+  transform: rotateY(180deg); /* Flips the shape */
+  transform-origin: top; /* Pivot point for animation */
+  animation: slideDown 2s ease-out forwards; /* Slide animation */
+}
+
+.custom-shape-divider-bottom-1728046211 .shape-fill {
+  fill: #FABC3F;
+}
+
+@media (max-width: 480px) {
+  .custom-shape-divider-bottom-1728046211 svg {
+      height: 67vh;
+  }
+}
+
+/* Medium screens (tablets, between 600px and 1024px wide) */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .custom-shape-divider-bottom-1728046211 svg {
+    height: 100vh;
+  }
+}
+
+/* Large screens (desktops, above 1024px wide) */
+@media (min-width: 1025px) {
+  .custom-shape-divider-top-1728046211 svg {
+    height: 100vh;
+  }
+}
+
+
+
+
+/* Container for the login form */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  box-sizing: border-box; /* Ensures padding doesn't overflow */
+}
+
+/* Image within the login container */
+.login-container img {
+  width: 90%; /* Makes the image full width of its container */
+  height: auto; /* Keeps the aspect ratio */
+}
+
+/* Input box container */
+.input-box {
+  position: relative;
+  width: 100%; /* Make it responsive */
+  margin-bottom: 35px;
+}
+
+/* Input fields styling */
+input {
+  width: 125%; /* Adjust input width to fit container */
+  outline: none;
+  font-size: 1rem; /* Responsive font size */
+  padding: 15px;
+  margin: -5px;
+  border-radius: 10px;
+  border: 1.5px solid black; /* Default border color */
+  background: transparent;
+  transition: 0.3s ease; /* Smooth transition for border change */
+}
+
+/* Label styles for all input fields */
+.labelemail, .labelpass, .labelphone, .labelname {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  font-size: 0.8rem;
+  color: black;
+  transition: 0.3s ease;
+}
+
+/* Focused input and valid state */
+input:focus,
+input:valid {
+  border-color: #FF0000;
+  color: #FF0000;
+}
+
+/* When input is focused or valid, adjust label */
+input:focus + .labelname,
+input:valid + .labelname,
+input:focus + .labelemail,
+input:valid + .labelemail,
+input:focus + .labelphone,
+input:valid + .labelphone,
+input:focus + .labelpass,
+input:valid + .labelpass {
+  transform: translate(-18px, -38px) scale(0.8);
+  color: #FF0000;
+  font-weight: bold;
+}
+
+/* Terms and conditions container */
+.term-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+input[type="checkbox"] {
+  height: 15px;
+  width: 15px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.Label {
+  font-size: 0.9rem;
+}
+
+.Span-term {
+  color: red;
+}
+
+/* Button styling */
+.btn button {
+  display: inline-block;
+  width: 120px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid;
+  position: relative;
+  top: 20px;
+  left: 90px;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+  z-index: 1;
+  color: black;
+  font-weight: 500;
+  cursor: pointer;
+ }
+ 
+ button::before,
+ button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transform: skew(15deg);
+  transition: all 0.5s;
+  overflow: hidden;
+  z-index: -1;
+ }
+ 
+ button::before {
+  left: -9px;
+  background: #FABC3F;
+ }
+ 
+ button::after {
+  right: -9px;
+  background: red;
+ }
+ 
+ button:hover::before,
+ button:hover::after {
+  width: 58%;
+ }
+ 
+ button:hover span {
+  color: #e0aaff;
+  transition: 0.3s;
+ }
+ 
+ button span {
+  color: #03045e;
+  font-size: 18px;
+  transition: all 0.3s ease-in;
+ }
+
+
+/* Disabled button */
+button:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
+
+/* Media queries for smaller devices */
+@media (max-width: 768px) {
+  .login-container {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  input {
+    font-size: 0.9rem;
+    padding: 1px;
+  }
+
+  .labelemail, .labelpass, .labelphone, .labelname {
+    font-size: 0.9rem;
+    margin-right: 5%;
+  }
+
+  .term-container {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+    .login-container img{
+      margin-left: 100px;
+    }
+
+
+  .login-container {
+    margin-left: -90px;
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  input {
+    width: 120%;
+    font-size: 0.8rem;
+    padding: 18px 20px 20px 20px;
+    margin-left: 30px;
+    margin-right: 40px;
+  }
+
+  .labelemail, .labelpass, .labelphone, .labelname {
+    font-size: 0.8rem;
+    padding-left: 30px;
+  }
+
+  .btn button {
+    left: 36%;
+    width: 70%;
+    height: 5vh;
+    
+  }
+}

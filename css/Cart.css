@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+
+body.fade-out {
+  opacity: 0;
+}
+
+
+.app {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+header h1 {
+  font-size: 20px;
+  color: #333;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.tab {
+  background: none;
+  border: none;
+  padding: 10px;
+  color: #007bff;
+  font-weight: bold;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease, color 0.3s ease; /* Add color transition */
+
+}
+.tab.active {
+  border-bottom: 2px solid #007bff;
+  color: #0056b3; /* Darker blue for active state */
+}
+
+/* Fade-in animation */
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%); /* Start from off-screen to the right */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Slide to the center */
+  }
+}
+
+.items {
+  display: none; /* Hide by default */
+  padding: 20px;
+  opacity: 0; /* Start with opacity 0 for slide-in effect */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.items.active {
+  display: block; /* Show only the active section */
+  opacity: 1; /* Full opacity for visible section */
+  animation: slideInFromRight 0.5s ease; /* Apply slide-in animation */
+}
+
+
+.items.active {
+  display: block; /* Show only the active section */
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.item img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.item span {
+  flex: 1;
+  margin-left: 15px;
+  font-size: 16px;
+  color: #333;
+}
+
+.add-to-cart {
+  background-color: transparent;
+  color: #007bff;
+  border: 1px solid #007bff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  padding: 20px;
+  background-color: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+footer .cart-item {
+  display: flex;
+  align-items: center;
+}
+
+footer img {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+footer button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+footer #quantity {
+  margin: 0 10px;
+}
+.service-package-options {
+  margin-top: 15px; /* Space above the section */
+  padding: 10px;
+  background-color: #f9f9f9; /* Light background for differentiation */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.service-package-options label {
+  display: block; /* Each label on a new line */
+  font-size: 14px; /* Slightly smaller font for labels */
+  color: #555; /* Gray color for labels */
+  margin-bottom: 5px; /* Space below labels */
+}
+
+.service-package-options select {
+  width: 100%; /* Full width for the dropdown */
+  padding: 10px; /* Padding for better touch targets */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+  margin-bottom: 15px; /* Space below each dropdown */
+  font-size: 14px; /* Consistent font size */
+  transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+.service-package-options select:focus {
+  border-color: #007bff; /* Blue border on focus */
+  outline: none; /* Remove default outline */
+}
+
+.service-package-options option {
+  padding: 10px; /* Padding for option text */
+}
+.next-button-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically if needed */
+  margin-top: 20px;
+  margin-bottom: 20px; /* Optional: add spacing above the button */
+}
+
+#next-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#next-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

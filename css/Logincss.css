@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway';
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+
+}
+
+.custom-shape-divider-bottom-1728046211 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  z-index: -1;
+} 
+
+.custom-shape-divider-bottom-1728046211 svg {
+  position: relative;
+  display: block;
+  width: calc(150% + 1.3px);
+  height: 450px;
+  transform: rotateY(180deg); /* Flips the shape */
+  transform-origin: top; /* Pivot point for animation */
+  animation: slideDown 2s ease-out forwards; /* Slide animation */
+}
+
+.custom-shape-divider-bottom-1728046211 .shape-fill {
+  fill: #FABC3F;
+}
+
+@media (max-width: 599px) {
+  .custom-shape-divider-top-1728046211 svg {
+      height: 100px;
+  }
+}
+
+/* Medium screens (tablets, between 600px and 1024px wide) */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .custom-shape-divider-top-1728046211 svg {
+      height: 43vh;
+      width: 1000px;
+  }
+}
+
+/* Large screens (desktops, above 1024px wide) */
+@media (min-width: 1025px) {
+  .custom-shape-divider-top-1728046211 svg {
+      height: 250px;
+  }
+}
+
+.login-container img{
+  width: 90%; /* Makes the image full width of its container */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  
+}
+.login-container{
+  display: flex;
+  flex-direction: column; /* Stacks items vertically */
+  justify-content: center;
+  align-items: center;/* Pushes items to the top */
+  width: 100%;
+  max-width: 400px; 
+}
+
+.input-box{
+  position: relative;
+  height: 60px;
+  line-height: 90px;
+  margin-bottom: 40px;
+  
+}
+input {
+  position: absolute; 
+  width: 120%;
+  outline: none;
+  font-size: 0.9em; /* Normal font size for input text */
+  padding: 17px 14px; /* Adjust padding to fit the normal font size */
+  line-height: normal;
+  border-radius: 10px;
+  border: 1.5px solid black;
+  margin-top: 15%;
+  top: -25px;
+  left: -22px; 
+  background: transparent;
+  transition: 0.1s ease;
+  z-index: 3;
+  
+}
+
+.labelemail, .labelpass {
+  position: absolute;
+  left: 2px;
+  top: -8px;
+   font-size: 13px;
+   color: black;
+   transition: 0.5s ease; 
+}
+
+
+input:focus,
+input:valid{
+  color: #FF0000;
+  border: 2px solid #FF0000;
+}
+
+input:focus + .labelemail,
+input:valid + .labelemail,
+input:focus + .labelpass,
+input:valid + .labelpass{
+  color: #FF0000;
+  font-weight: bold;
+  height: 34px;
+  line-height: 5px;
+  transform: translate(-20px, -10px) scale(0.80);
+  z-index: 4;
+}
+
+
+.error-message {
+  color: #e74c3c;
+  font-size: 14px;
+  min-height: 20px; /* Ensures error message space is fixed */
+  margin-top: 10px; /* Adjust margin for spacing */
+}
+
+/* From Uiverse.io by Ali-Tahmazi99 */ 
+/* From uiverse.io by @Ali-Tahmazi99 */
+.btn button {
+  display: inline-block;
+  width: 120px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid;
+  position: relative;
+  left: 55px;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+  z-index: 1;
+  color: black;
+  font-weight: 500;
+  cursor: pointer;
+ }
+ 
+ button::before,
+ button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transform: skew(15deg);
+  transition: all 0.5s;
+  overflow: hidden;
+  z-index: -1;
+ }
+ 
+ button::before {
+  left: -9px;
+  background: #FABC3F;
+ }
+ 
+ button::after {
+  right: -9px;
+  background: red;
+ }
+ 
+ button:hover::before,
+ button:hover::after {
+  width: 58%;
+ }
+ 
+ button:hover span {
+  color: #e0aaff;
+  transition: 0.3s;
+ }
+ 
+ button span {
+  color: #03045e;
+  font-size: 18px;
+  transition: all 0.3s ease-in;
+ }
+
+.register {
+  margin-top: 50%;
+  cursor: pointer;
+}
+
+.register a {
+  color: red;
+  font-size: 13px;
+  text-decoration: underline;
+  text-align: left
+}

@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f3f3f3;
+  text-align: center; 
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+
+body.fade-out {
+  opacity: 0;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 30px; /* Adds space between title and cards */
+}
+
+.product-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center; /* Aligns product cards horizontally */
+  flex-wrap: wrap;
+  margin-top: -10px; /* Allows wrapping if window is too narrow */
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  height: 550px;
+  width: 300px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Ensures elements are centered inside the card */
+}
+
+.product-image img {
+  width: 100%;
+  height: auto;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.product-details {
+  flex-grow: 1;
+  padding: 15px 0;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.description {
+  color: #555;
+  font-size: 14px;
+  margin-top: 34px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: left;
+}
+
+.note {
+  color: red;
+  font-size: 10px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: left;
+}
+
+.price {
+  position: relative;
+  top: -50px;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.buy-now {
+  position: relative;
+  top: -20px;
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(207deg, rgba(255,0,0,0.6084558823529411) 27%, rgba(252,205,111,1) 63%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.buy-now:hover {
+  background-color: #ff5252;
+}
+
+.bottom-nav {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(255, 0, 0, 0.7);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 70px;
+}
+
+.nav-item {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.nav-item img {
+  width: 22px;
+  height: 22px;
+}

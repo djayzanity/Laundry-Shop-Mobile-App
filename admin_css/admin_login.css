@@ -1,0 +1,109 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333; /* Dark grey text */
+}
+
+.login-container {
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.logo img {
+  width: 270px;
+  height: 170px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #c62828; /* Bold red for the title */
+}
+
+.error-message {
+  color: #e53935; /* Red for error messages */
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #333; /* Dark grey for labels */
+}
+
+input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd; /* Light grey border for inputs */
+  border-radius: 25px;
+  font-size: 16px;
+  color: #333; /* Dark grey text inside inputs */
+  outline: none;
+  background-color: #f9f9f9; /* Light grey background for inputs */
+}
+
+input:focus {
+  background-color: #fff; /* White background when focused */
+  border-color: #c62828; /* Red border on focus */
+  box-shadow: 0 0 5px rgba(198, 40, 40, 0.3); /* Soft red glow on focus */
+}
+
+button {
+  background: #c62828; /* Solid red button */
+  color: #fff; /* White text */
+  font-size: 18px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #e53935; /* Slightly lighter red on hover */
+  box-shadow: 0 3px 10px rgba(229, 57, 53, 0.3); /* Shadow for hover effect */
+  transform: scale(1.03); /* Slight scaling effect */
+}
+
+button:active {
+  background: #b71c1c; /* Darker red on click */
+  box-shadow: none; /* Remove shadow on click */
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    padding: 20px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+}
